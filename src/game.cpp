@@ -383,11 +383,14 @@ void Game::applyMove(const Move& move,bool undo){ // Applies a move based on the
 
 }
 
+bool db{false};
+
 void Game::undo(){
 
     // -- Undoes the latest move in moveHistory
     
-    if (moveHistory.empty()) return; 
+    if (moveHistory.empty() || db ) return; 
+    db=true;
 
     std::cout << "Performing an Undo " << std::endl;
     
@@ -419,5 +422,6 @@ void Game::undo(){
     }
 
     moveHistory.pop_back();
+    db=false;
 
 }
