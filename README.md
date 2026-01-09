@@ -8,6 +8,7 @@ git clone https://github.com/AndrewGossenPerez/Solitaire.git
 cd Solitaire
 cmake -S . -B build
 cmake --build build
+./build/Solitaire
 ```
 
 
