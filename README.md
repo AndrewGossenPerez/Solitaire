@@ -1,6 +1,6 @@
 
 A cheeky bit of Solitaire never hurt no one. 
-This was made in less than a day, don't expect perfection. Current logic issue with card undoing due to no saved state of whether the card was flipped or not, I plan to redo the whole system soon.
+This was made in less than a day, don't expect perfection. Current logic issue with card undoing due to no saved state of whether the card was flipped or not (Relevant for Foundation->Tableau), I plan to redo the whole system soon.
 
 ## Installation
 ```bash
